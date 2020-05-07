@@ -1,0 +1,55 @@
+{
+	"name": "emberwind",
+	"title": "Emberwind",
+	"description": "A simple system for Emberwind.",
+	"version": "0.4",
+	"templateVersion": 2,
+	"author": "bioa10",
+	"minimumCoreVersion": "0.5.5",
+	"compatibleCoreVersion": "0.5.5",
+	"scripts": [],
+	"esmodules": [],
+	"styles": [
+		"styles/simple.css"
+	],
+	"packs": [
+		{
+			"name": "heroes",
+			"label": "Heroes",
+			"system": "emberwind",
+			"module": "emberwind",
+			"path": "packs/heroes.db",
+			"entity": "Actor"
+		},
+		{
+			"name": "foes",
+			"label": "Foes",
+			"system": "emberwind",
+			"module": "emberwind",
+			"path": "packs/foes.db",
+			"entity": "Actor"
+		},
+		{
+			"name": "items",
+			"label": "Items",
+			"system": "emberwind",
+			"module": "emberwind",
+			"path": "packs/items.db",
+			"entity": "Item"
+		}
+	],
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "lang/en.json"
+		}
+	],
+	"socket": false,
+	"gridDistance": 1,
+	"gridUnits": "Sq.",
+	"primaryTokenAttribute": "resources.hp",
+	"url": "test",
+	"manifest": "test",
+	"download": "test"
+}
