@@ -2,42 +2,15 @@
 	"name": "emberwind",
 	"title": "Emberwind",
 	"description": "A simple system for Emberwind.",
-	"version": "0.4",
+	"version": "0.1.0",
 	"templateVersion": 2,
 	"author": "bioa10",
-	"minimumCoreVersion": "0.5.5",
-	"compatibleCoreVersion": "0.5.5",
+	"minimumCoreVersion": "0.8.9",
+	"compatibleCoreVersion": "0.8.9",
 	"scripts": [],
-	"esmodules": [],
-	"styles": [
-		"styles/simple.css"
-	],
-	"packs": [
-		{
-			"name": "heroes",
-			"label": "Heroes",
-			"system": "emberwind",
-			"module": "emberwind",
-			"path": "packs/heroes.db",
-			"entity": "Actor"
-		},
-		{
-			"name": "foes",
-			"label": "Foes",
-			"system": "emberwind",
-			"module": "emberwind",
-			"path": "packs/foes.db",
-			"entity": "Actor"
-		},
-		{
-			"name": "items",
-			"label": "Items",
-			"system": "emberwind",
-			"module": "emberwind",
-			"path": "packs/items.db",
-			"entity": "Item"
-		}
-	],
+	"esmodules": ["module/core.mjs"],
+	"styles": ["styles/core.css"],
+	"packs": [],
 	"languages": [
 		{
 			"lang": "en",
@@ -45,11 +18,11 @@
 			"path": "lang/en.json"
 		}
 	],
-	"socket": false,
 	"gridDistance": 1,
 	"gridUnits": "Sq.",
 	"primaryTokenAttribute": "resources.hp",
-	"url": "test",
-	"manifest": "test",
+	"url": "https://github.com/bioa10/emberwind-system",
+	"manifest": "https://raw.githubusercontent.com/bioa10/emberwind-system/master/system.json",
 	"download": "test"
+	"license": "LICENSE"
 }

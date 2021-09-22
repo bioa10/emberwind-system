@@ -1,81 +1,26 @@
 {
 	"Actor": {
-		"types": [
-			"Hero",
-			"Foe"
-		],
+		"types": ["hero", "foe"],
 		"templates": {
-			"shared": {
-				"background": {
-					"biography": "",
-					"hairColor": "blue"
-				},
-				"resources": {
-					"hp": {
-						"min": 0,
-						"value": 10,
-						"max": 10
-					}
-				},
-				"barrier": {
-					"toughness": {
-						"value": 4
-					},
-					"resistance": {
-						"value": 4
-					}
+			"status": {
+				"hp": {
+					"value": 10,
+					"max": 10
 				}
-			}
-		},
-		"Hero": {
-			"templates": [
-				"shared"
-			],
-			"defense": {
-				"dodge": {
-					"value": 4
-				},
-				"willpower": {
-					"value": 4
-				}
-			},
-			"cap": {
-				"c": 2,
-				"a": 10,
-				"p": 5
 			},
 			"skills": {
-				
+
 			}
 		},
-		"Foe": {
-			"templates": [
-				"shared"
-			]
+		"hero": {
+			"templates": ["skills"],
+		},
+		"foe": {
+			"templates": [],
 		}
 	},
 	"Item": {
-		"types": [
-			"weapon",
-			"spell"
-		],
-		"templates": {
-			"rarity": {
-				"rarity": "Common",
-				"price": 20
-			}
-		},
-		"weapon": {
-			"templates": [
-				"rarity"
-			],
-			"damage": 5
-		},
-		"spell": {
-			"templates": [
-				"rarity"
-			],
-			"cost": 2
-		}
+		"types": [],
+		"templates": {},
 	}
 }
