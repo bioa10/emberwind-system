@@ -23,6 +23,6 @@
 	"primaryTokenAttribute": "resources.hp",
 	"url": "https://github.com/bioa10/emberwind-system",
 	"manifest": "https://raw.githubusercontent.com/bioa10/emberwind-system/master/system.json",
-	"download": "test",
+	"download": "",
 	"license": "LICENSE"
 }
