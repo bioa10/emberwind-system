@@ -13,14 +13,14 @@
 			}
 		},
 		"hero": {
-			"templates": ["skills"],
+			"templates": ["skills"]
 		},
 		"foe": {
-			"templates": [],
+			"templates": []
 		}
 	},
 	"Item": {
 		"types": [],
-		"templates": {},
+		"templates": {}
 	}
 }
