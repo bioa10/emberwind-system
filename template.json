@@ -1,26 +1,29 @@
 {
-	"Actor": {
-		"types": ["hero", "foe"],
-		"templates": {
-			"status": {
-				"hp": {
-					"value": 10,
-					"max": 10
-				}
-			},
-			"skills": {
-
-			}
-		},
-		"hero": {
-			"templates": ["skills"]
-		},
-		"foe": {
-			"templates": []
-		}
-	},
-	"Item": {
-		"types": [],
-		"templates": {}
-	}
+  "Actor": {
+    "types": [
+      "hero",
+      "foe"
+    ],
+    "templates": {
+      "status": {
+        "hp": {
+          "value": 10,
+          "max": 10
+        }
+      },
+      "skills": {}
+    },
+    "hero": {
+      "templates": [
+        "skills"
+      ]
+    },
+    "foe": {
+      "templates": []
+    }
+  },
+  "Item": {
+    "types": [],
+    "templates": {}
+  }
 }

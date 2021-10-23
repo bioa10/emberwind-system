@@ -1,28 +1,32 @@
 {
-	"name": "emberwind-system",
-	"title": "Emberwind",
-	"description": "A simple system for Emberwind.",
-	"version": "0.1.0",
-	"templateVersion": 2,
-	"author": "bioa10",
-	"minimumCoreVersion": "0.8.9",
-	"compatibleCoreVersion": "0.8.9",
-	"scripts": [],
-	"esmodules": ["module/core.mjs"],
-	"styles": ["styles/core.css"],
-	"packs": [],
-	"languages": [
-		{
-			"lang": "en",
-			"name": "English",
-			"path": "lang/en.json"
-		}
-	],
-	"gridDistance": 1,
-	"gridUnits": "Sq.",
-	"primaryTokenAttribute": "resources.hp",
-	"url": "https://github.com/bioa10/emberwind-system",
-	"manifest": "https://raw.githubusercontent.com/bioa10/emberwind-system/master/system.json",
-	"download": "",
-	"license": "LICENSE"
+  "name": "emberwind-system",
+  "title": "Emberwind",
+  "description": "A simple system for Emberwind.",
+  "version": "0.1.0",
+  "templateVersion": 2,
+  "author": "bioa10",
+  "minimumCoreVersion": "0.8.9",
+  "compatibleCoreVersion": "0.8.9",
+  "scripts": [],
+  "esmodules": [
+    "module/core.mjs"
+  ],
+  "styles": [
+    "styles/core.css"
+  ],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "gridDistance": 1,
+  "gridUnits": "Sq.",
+  "primaryTokenAttribute": "resources.hp",
+  "url": "https://github.com/bioa10/emberwind-system",
+  "manifest": "https://raw.githubusercontent.com/bioa10/emberwind-system/master/system.json",
+  "download": "",
+  "license": "LICENSE"
 }
