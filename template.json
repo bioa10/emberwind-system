@@ -5,17 +5,126 @@
       "foe"
     ],
     "templates": {
-      "status": {
+      "info": {
+        "class": "",
+        "Subclass": "",
         "hp": {
-          "value": 10,
-          "max": 10
+          "value": 20,
+          "max": 20
+        },
+        "tier": {
+          "value": 1,
+          "max": 4
+        },
+        "experience": {
+          "value": 0,
+          "max": 1000
+        },
+        "actionPools": {
+          "value": 0,
+          "max": 4
         }
       },
-      "skills": {}
+      "skills": {
+        "acrobatics": {
+          "value": 8
+        },
+        "athletics": {
+          "value": 8
+        },
+        "endurance": {
+          "value": 8
+        },
+        "fastTalk": {
+          "value": 8
+        },
+        "focus": {
+          "value": 8
+        },
+        "insight": {
+          "value": 8
+        },
+        "intimidate": {
+          "value": 8
+        },
+        "knowledge": {
+          "value": 8
+        },
+        "leadership": {
+          "value": 8
+        },
+        "mend": {
+          "value": 8
+        },
+        "sleightOfHand": {
+          "value": 8
+        },
+        "stealth": {
+          "value": 8
+        }
+      },
+      "cap": {
+        "critical": {
+          "value": 1
+        },
+        "accuracy": {
+          "value": 10
+        },
+        "penetration": {
+          "value": 5
+        }
+      },
+      "barrier": {
+        "toughness": {
+          "value": 4
+        },
+        "resistance": {
+          "value": 4
+        }
+      },
+      "defence": {
+        "dodge": {
+          "value": 4
+        },
+        "willpower": {
+          "value": 4
+        }
+      },
+      "specialActionLimits": {
+        "trigger": {
+          "value": 1
+        },
+        "sustain": {
+          "value": 1
+        },
+        "amplify": {
+          "value": 1
+        }
+      },
+      "attributes": {
+        "strength": {
+          "value": 0
+        },
+        "intelligence": {
+          "value": 0
+        },
+        "dexterity": {
+          "value": 0
+        },
+        "resilience": {
+          "value": 0
+        }
+      }
     },
     "hero": {
       "templates": [
-        "skills"
+        "info",
+        "skills",
+        "cap",
+        "barrier",
+        "defence",
+        "specialActionLimits",
+        "attributes"
       ]
     },
     "foe": {
