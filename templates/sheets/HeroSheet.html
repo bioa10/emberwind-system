@@ -3,13 +3,13 @@
     {{!-- Sheet Header --}}
     <header class="sheet-header">
         {{!-- Header stuff goes here --}}
-        <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
+        <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" style="height: auto; max-width: 30%;"/>
         <div class="header-fields" style="max-width: 30%;">
             <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
             <div class="resources grid grid-2col">
               <input type="text" name="data.info.hp.value" value="{{data.info.hp.value}}" data-dtype="Number"/>
             </div>
-            <div class="abilities grid grid-3col">{{!-- abilities here --}}</div>
+            <div class="abilities grid grid-3col">{{!-- abilities here --}} I'm an ability</div>
         </div>
         {{!-- Sheet Tab Navigation --}}
         <nav class="sheet-tabs tabs" data-group="primary">
