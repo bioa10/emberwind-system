@@ -7,7 +7,14 @@
     "templates": {
       "info": {
         "class": "",
-        "Subclass": "",
+        "subclass": "",
+        "gender": "",
+        "age": "",
+        "height": "",
+        "build": "",
+        "hair": "",
+        "eyes": "",
+        "description": "",
         "hp": {
           "value": 20,
           "max": 20
