@@ -3,21 +3,29 @@
     {{!-- Sheet Header --}}
     <header class="sheet-header">
         {{!-- Header stuff goes here --}}
-        <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
-        <div class="header-fields">
-            <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
-            <div class="resources grid grid-2col">
-              <input type="text" name="data.info.hp.value" value="{{data.info.hp.value}}" data-dtype="Number"/>
+        <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" style="height: auto; max-width: 30%;"/>
+        <div class="header-fields" style="max-width: 30%;">
+            <div>
+                <label for="name">Name:</label>
+                <h1 class="charname">
+                    <input id="name" name="name" type="text" value="{{actor.name}}" placeholder="Name"/>
+                </h1>
             </div>
-            <div class="abilities grid grid-3col">{{!-- abilities here --}}</div>
+            <div class="resources grid grid-2col">
+                <label for="hp">HP</label>
+              <input id="hp" type="text" name="data.info.hp.value" value="{{data.info.hp.value}}" data-dtype="Number"/>
+            </div>
+            <div class="abilities grid grid-3col">{{!-- abilities here --}} I'm an ability</div>
         </div>
     </header>
 
     {{!-- Sheet Tab Navigation --}}
-    <nav class="sheet-tabs tabs" data-group="primary">
-        <a class="item" data-tab="description">Description</a>
-        <a class="item" data-tab="items">Items</a>
-    </nav>
+        <nav class="sheet-tabs tabs" data-group="primary">
+            <a class="item" data-tab="actions">Actions</a>
+            <a class="item" data-tab="inventory">Inventory</a>
+            <a class="item" data-tab="bio">Bio</a>
+            <a class="item" data-tab="condition">Condition</a>
+        </nav>
 
     {{!-- Sheet Body --}}
     <section class="sheet-body">
