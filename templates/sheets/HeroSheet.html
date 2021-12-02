@@ -6,7 +6,7 @@
         <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" style="height: auto; max-width: 30%;"/>
         <div class="header-fields" style="max-width: 30%;">
             <div>
-                <label for="name">{{localize "emberwind.InfoName" }}</label>
+                <label for="name">{{ localize "emberwind.InfoName" }}</label>
                 <h1 class="charname">
                     <input id="name" name="name" type="text" value="{{actor.name}}" placeholder="Name"/>
                 </h1>
@@ -29,18 +29,18 @@
         
 
     {{!-- Sheet Body --}}
-    <section class="sheet-body">
+    <section class="primary-body">
         {{!-- Tab Content --}}
         {{!-- Actions --}}
         <div class="tab actions flexcol" data-group="primary" data-tab="actions">
             <table>
                 <tr>
-                  <th>Name</th>
-                  <th>Type</th>
-                  <th>Target</th>
-                  <th>Range</th>
-                  <th>Effect</th>
-                  <th>Speed</th>
+                  <th>{{ localize "emberwind.ActionsName"}}</th>
+                  <th>{{ localize "emberwind.ActionsType" }}</th>
+                  <th>{{ localize "emberwind.ActionsTarget" }}</th>
+                  <th>{{ localize "emberwind.ActionsRange" }}</th>
+                  <th>{{ localize "emberwind.ActionsEffect" }}</th>
+                  <th>{{ localize "emberwind.ActionsSpeed" }}</th>
                 </tr>
                 <tr>
                   <td>Movement</td>
