@@ -4,7 +4,8 @@
  *
  * @returns {Promise}
  */
-export const preloadHandlebarsTemplates = async function () {
+async function loadHandlebarsTemplates()
+{
   // Define template paths to load
   const templatePaths = [
     // Actor Sheet Partials
@@ -32,3 +33,7 @@ export const preloadHandlebarsTemplates = async function () {
   // Load the template parts
   return loadTemplates(templatePaths);
 };
+
+Hooks.once("init", function() {
+  loadHandlebarsTemplates();
+});
