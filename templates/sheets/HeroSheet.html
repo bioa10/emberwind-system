@@ -33,36 +33,7 @@
         {{!-- Tab Content --}}
         {{!-- Actions --}}
         <div class="tab actions flexcol" data-group="primary" data-tab="actions">
-            <table>
-                <tr>
-                  <th>{{ localize "emberwind.ActionsName"}}</th>
-                  <th>{{ localize "emberwind.ActionsType" }}</th>
-                  <th>{{ localize "emberwind.ActionsTarget" }}</th>
-                  <th>{{ localize "emberwind.ActionsRange" }}</th>
-                  <th>{{ localize "emberwind.ActionsEffect" }}</th>
-                  <th>{{ localize "emberwind.ActionsSpeed" }}</th>
-                </tr>
-                <tr>
-                  <td>Movement</td>
-                  <td>*You cannot end your movement in an occupied square</td>
-                </tr>
-                <tr>
-                  <td>Move Action</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>Move 1 - 5 Squares. Can move through friendly Combatants.</td>
-                  <td>Slow</td>
-                </tr>
-                <tr>
-                    <td>Shift Action</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>Move 1 Square. Can move through friendly Combatants.</td>
-                    <td>Fast</td>
-                  </tr>
-              </table>
+            {{> "templates/sheets/components/hero-actions.hbs"}}
 
         </div>
         {{!-- Inventory --}}
