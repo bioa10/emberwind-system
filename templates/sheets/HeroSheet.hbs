@@ -34,7 +34,6 @@
         {{!-- Actions --}}
         <div class="tab actions flexcol" data-group="primary" data-tab="actions">
             {{> "systems/emberwind-system/templates/sheets/components/hero-actions.hbs"}}
-
         </div>
         {{!-- Inventory --}}
         <div class="tab inventory flexcol" data-group="primary" data-tab="inventory">
@@ -43,18 +42,18 @@
         {{!-- Bio --}}
         <div class="tab bio flexcol" data-group="primary" data-tab="bio">
             <div style="max-width: 60%;">
-                <h3>Appearance</h3>
-                <h3>Description</h3>
+                <h3>{{ localize "emberwind.Appearance" }}</h3>
+                <h3>{{ localize "emberwind.Description" }}</h3>
                 <input id="description" type="text" />
-                <h3>History</h3>
+                <h3>{{ localize "emberwind.History" }}</h3>
                 <input id="history" type="text" />
             </div>
             <div style="max-width: 30%;">
-                <h3>Anchors</h3>
+                <h3>{{ localize "emberwind.Anchors" }}</h3>
                 <input type="text"/>
                 <input type="text"/>
                 <input type="text"/>
-                <h3>Deadweights</h3>
+                <h3>{{ localize "emberwind.Deadweights"}}</h3>
                 <input type="text"/>
                 <input type="text"/>
                 <input type="text"/>
