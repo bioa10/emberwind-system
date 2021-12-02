@@ -30,6 +30,36 @@
         {{!-- Tab Content --}}
         {{!-- Actions --}}
         <div class="tab actions" data-group="primary" data-tab="actions">
+            <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Type</th>
+                  <th>Target</th>
+                  <th>Range</th>
+                  <th>Effect</th>
+                  <th>Speed</th>
+                </tr>
+                <tr>
+                  <td>Movement</td>
+                  <td>*You cannot end your movement in an occupied square</td>
+                </tr>
+                <tr>
+                  <td>Move Action</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>Move 1 - 5 Squares. Can move through friendly Combatants.</td>
+                  <td>Slow</td>
+                </tr>
+                <tr>
+                    <td>Shift Action</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>Move 1 Square. Can move through friendly Combatants.</td>
+                    <td>Fast</td>
+                  </tr>
+              </table>
 
         </div>
         {{!-- Inventory --}}
@@ -41,23 +71,23 @@
             <div style="max-width: 60%;">
                 <h3>Appearance</h3>
                 <h3>Description</h3>
-                <input id="description" type="text" >
+                <input id="description" type="text" />
                 <h3>History</h3>
-                <input id="history" type="text" >
+                <input id="history" type="text" />
             </div>
             <div style="max-width: 30%;">
                 <h3>Anchors</h3>
-                <input type="text">
-                <input type="text">
-                <input type="text">
+                <input type="text"/>
+                <input type="text"/>
+                <input type="text"/>
                 <h3>Deadweights</h3>
-                <input type="text">
-                <input type="text">
-                <input type="text">
+                <input type="text"/>
+                <input type="text"/>
+                <input type="text"/>
             </div>
         
         </div>
-        
+
         {{!-- Conditions --}}
         <div class="tab conditions" data-group="primary" data-tab="conditions">
 
