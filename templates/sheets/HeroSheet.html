@@ -20,12 +20,41 @@
     </header>
 
     {{!-- Sheet Tab Navigation --}}
-        <nav class="sheet-tabs tabs" data-group="primary">
+        <nav style="max-width: 60%;" class="sheet-tabs tabs" data-group="primary">
             <a class="item" data-tab="actions">Actions</a>
             <a class="item" data-tab="inventory">Inventory</a>
             <a class="item" data-tab="bio">Bio</a>
-            <a class="item" data-tab="condition">Condition</a>
+            <a class="item" data-tab="conditions">Conditions</a>
         </nav>
+        <div class="tab items" data-group="primary" data-tab="actions">
+
+        </div>
+        <div class="tab items" data-group="primary" data-tab="inventory">
+
+        </div>
+        <div class="tab items" data-group="primary" data-tab="bio">
+            <div style="max-width: 60%;">
+                <h3>Appearance</h3>
+                <h3>Description</h3>
+                <input id="description" type="text" >
+                <h3>History</h3>
+                <input id="history" type="text" >
+            </div>
+            <div style="max-width: 30%;">
+                <h3>Anchors</h3>
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <h3>Deadweights</h3>
+                <input type="text">
+                <input type="text">
+                <input type="text">
+            </div>
+        
+        </div>
+        <div class="tab items" data-group="primary" data-tab="conditions">
+
+        </div>
 
     {{!-- Sheet Body --}}
     <section class="sheet-body">
