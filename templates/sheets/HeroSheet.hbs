@@ -32,17 +32,26 @@
     <section class="primary-body">
         {{!-- Tab Content --}}
         {{!-- Actions --}}
-        <div class="tab actions flexcol" data-group="primary" data-tab="actions">
+        {{#each action}}
+        <div class="tab actions flexcol" data-group="primary-tabs" data-tab="actions">
             <div class="header-summary flexcol">
-            {{> "systems/emberwind-system/templates/sheets/components/hero-actions.hbs"}}
+                Fixed content for tab {{actions}}<br>
+            {{> "systems/emberwind-system/templates/sheets/components/hero-actions.hbs" this}}
             </div>
         </div>
-        {{!-- Inventory --}}
-        <div class="tab inventory flexcol" data-group="primary" data-tab="inventory">
+        {{/each}}
 
+        {{!-- Inventory --}}
+        {{#each inventory}}
+        <div class="tab inventory flexcol" data-group="primary-tabs" data-tab="inventory">
+            Fixed content for tab {{inventory}}<br>
         </div>
+        {{/each}}
+        
         {{!-- Bio --}}
-        <div class="tab bio flexcol" data-group="primary" data-tab="bio">
+        {{#each bio}}
+        <div class="tab bio flexcol" data-group="primary-tabs" data-tab="bio">
+             Fixed content for tab {{bio}}<br>
             <div style="max-width: 60%;">
                 <h3>{{ localize "emberwind.Appearance" }}</h3>
                 <h3>{{ localize "emberwind.Description" }}</h3>
@@ -62,10 +71,12 @@
             </div>
         
         </div>
-
+        {{/each}}
         {{!-- Conditions --}}
-        <div class="tab conditions flexcol" data-group="primary" data-tab="conditions">
-
+        {{#each condition}}
+        <div class="tab conditions flexcol" data-group="primary-tabs" data-tab="conditions">
+            Fixed content for tab {{conditions}}<br>
         </div>
+        {{/each}}
     </section>
 </form>
