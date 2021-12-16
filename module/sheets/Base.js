@@ -31,6 +31,5 @@ const template_data = { header: "Handlebars header text.",
                                  content: "<em>Fancy tab2 content.</em>"}],
                         footer: "Handlebars footer text."};
 
-const my_form = new myFormApplication(template_data, { template: template_file,
-    tabs: [{navSelector: ".tabs", contentSelector: ".content", initial: "tab1"}] }); // data, options
+const my_form = new myFormApplication(template_data, {}); // data, options
 const res = await my_form.render(true);
