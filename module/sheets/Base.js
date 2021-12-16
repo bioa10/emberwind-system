@@ -20,8 +20,7 @@ class myFormApplication extends FormApplication {
     }
   }
 
-  const template_file = "macro_data/TEMPLATE_FILE";
-  loadTemplates(["macro_data/tab_partial.html"]);
+const template_file = "../../templates\sheets/HeroSheet.hbs";
 const template_data = { header: "Handlebars header text.",
                         tabs: [{ label: "tab1",
                                  title: "My First Tab",
