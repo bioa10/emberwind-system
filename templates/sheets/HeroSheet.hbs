@@ -32,24 +32,24 @@
     <section class="primary-body">
         {{!-- Tab Content --}}
         {{!-- Actions --}}
-        {{#each action}}
+        
         <div class="tab actions flexcol" data-group="primary-tabs" data-tab="actions">
             <div class="header-summary flexcol">
                 Fixed content for tab {{actions}}<br>
             {{> "systems/emberwind-system/templates/sheets/components/hero-actions.hbs" this}}
             </div>
         </div>
-        {{/each}}
+        
 
         {{!-- Inventory --}}
-        {{#each inventory}}
+        
         <div class="tab inventory flexcol" data-group="primary-tabs" data-tab="inventory">
             Fixed content for tab {{inventory}}<br>
         </div>
-        {{/each}}
         
+
         {{!-- Bio --}}
-        {{#each bio}}
+        
         <div class="tab bio flexcol" data-group="primary-tabs" data-tab="bio">
              Fixed content for tab {{bio}}<br>
             <div style="max-width: 60%;">
@@ -71,12 +71,12 @@
             </div>
         
         </div>
-        {{/each}}
+        
         {{!-- Conditions --}}
-        {{#each condition}}
+        
         <div class="tab conditions flexcol" data-group="primary-tabs" data-tab="conditions">
             Fixed content for tab {{conditions}}<br>
         </div>
-        {{/each}}
+    
     </section>
 </form>
