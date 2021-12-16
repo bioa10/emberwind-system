@@ -19,6 +19,19 @@ class myFormApplication extends FormApplication {
       return;
     }
   }
-  const my_form = new myFormApplication(template_data, { template: template_file,
+
+  const template_file = "macro_data/TEMPLATE_FILE";
+  loadTemplates(["macro_data/tab_partial.html"]);
+const template_data = { header: "Handlebars header text.",
+                        tabs: [{ label: "tab1",
+                                 title: "My First Tab",
+                                 content: "<em>Fancy tab1 content.</em>"},
+
+                               { label: "tab2",
+                                 title: "My Second Tab",
+                                 content: "<em>Fancy tab2 content.</em>"}],
+                        footer: "Handlebars footer text."};
+
+const my_form = new myFormApplication(template_data, { template: template_file,
     tabs: [{navSelector: ".tabs", contentSelector: ".content", initial: "tab1"}] }); // data, options
 const res = await my_form.render(true);
