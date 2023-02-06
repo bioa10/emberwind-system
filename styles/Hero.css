@@ -1,0 +1,26 @@
+﻿.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+
+.character{
+    max-width: 200px;
+}
+
+.resources{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+.extras{
+    max-width: 500px;
+}
+
+.extras .item {
+    padding: 10px;
+}
+
+.extras .tab-content{
+    max-width:auto;
+}

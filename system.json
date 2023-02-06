@@ -12,7 +12,8 @@
     "module/core.mjs"
   ],
   "styles": [
-    "styles/core.css"
+    "styles/core.css",
+    "styles/Hero.css"
   ],
   "packs": [],
   "languages": [

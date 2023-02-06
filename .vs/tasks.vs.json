@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-system",
+      "appliesTo": "system.json",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "task-emberwind",
+      "appliesTo": "less/emberwind.less",
+      "type": "launch"
+    }
+  ]
+}

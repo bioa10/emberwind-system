@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\less",
+    "\\module",
+    "\\module\\handlebars",
+    "\\module\\sheets",
+    "\\styles",
+    "\\templates",
+    "\\templates\\sheets",
+    "\\templates\\sheets\\components"
+  ],
+  "SelectedNode": "\\templates\\sheets\\HeroSheet.hbs",
+  "PreviewInSolutionExplorer": false
+}

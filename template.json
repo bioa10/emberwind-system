@@ -15,7 +15,7 @@
         "hair": "",
         "eyes": "",
         "description": "",
-        "hp": {
+        "health": {
           "value": 20,
           "max": 20
         },

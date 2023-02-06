@@ -1,83 +1,85 @@
-<form class="{{cssClass}} flexcol" autocomplete="off">
-
-    {{!-- Sheet Header --}}
-    <header class="sheet-header">
-        {{!-- Header stuff goes here --}}
-        <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" style="height: auto; max-width: 30%;"/>
-        <div class="header-fields" style="max-width: 30%;">
-            <div>
-                <label for="name">{{ localize "emberwind.InfoName" }}</label>
-                <h1 class="charname">
-                    <input id="name" name="name" type="text" value="{{actor.name}}" placeholder="Name"/>
-                </h1>
-            </div>
-            <div class="resources grid grid-2col">
-                <label for="hp">{{ localize "emberwind.InfoHP" }}</label>
-              <input id="hp" type="text" name="data.info.hp.value" value="{{data.info.hp.value}}" data-dtype="Number"/>
-            </div>
-            <div class="abilities grid grid-3col">{{!-- abilities here --}} I'm an ability</div>
+<form class="{{cssClass}} {{actor.hero}}flexcol" autocomplete="off">
+    <div class="grid-container">
+        <div class="character">
+            {{!-- Sheet Header --}}
+            <header class="sheet-header">
+                {{!-- Header stuff goes here --}}
+                <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" width="80" height="80">
+                <div class="header-fields">
+                    <div>
+                        <label for="name">{{ localize "emberwind.InfoName" }}</label>
+                        <h1 class="charname">
+                            <input id="name" name="name" type="text" value="{{actor.name}}" placeholder="Name">
+                        </h1>
+                    </div>
+                    <div class="resources grid grid-2col">
+                        <div class="currentHP">
+                            <label for="hp">{{ localize "emberwind.InfoHP" }}</label>
+                            <input type="text" name="system.hp.value" value="{{system.hp.value}}" data-dtype="Number" style="max-width: 50px">
+                        </div>
+                        <div class="maxHP">
+                            <label>max: </label>
+                            <div>{{system.hp.max}}</div>
+                        </div>
+                    </div>
+                </div>
+            </header>
         </div>
-    </header>
-
-    {{!-- Sheet Tab Navigation --}}
-        <nav style="max-width: 60%;" class="sheet-tabs tabs" data-group="primary">
-            <a class="item active" data-tab="actions">{{ localize "emberwind.Actions" }}</a>
-            <a class="item" data-tab="inventory">{{ localize "emberwind.Inventory"}}</a>
-            <a class="item" data-tab="bio">{{ localize "emberwind.Bio"}}</a>
-            <a class="item" data-tab="conditions">{{ localize "emberwind.Conditions"}}</a>
-        </nav>
-        
-
-    {{!-- Sheet Body --}}
-    <section class="primary-body">
-        {{!-- Tab Content --}}
-        {{!-- Actions --}}
-        
-        {{!-- <div class="tab actions flexcol" data-group="primary-tabs" data-tab="actions">
-            <div class="header-summary flexcol"> --}}
-                Fixed content for tab {{actions}}<br>
-            {{> "systems/emberwind-system/templates/sheets/components/hero-actions.hbs" this}}
+        <div class="extras">
+            <div class="content">
+                <nav class="sheet-tabs tabs" data-group="primary">
+                    <a class="item" data-tab="actions">{{ localize "emberwind.Actions" }}</a>
+                    <a class="item" data-tab="inventory">{{ localize "emberwind.Inventory"}}</a>
+                    <a class="item" data-tab="bio">{{ localize "emberwind.Bio"}}</a>
+                    <a class="item" data-tab="conditions">{{ localize "emberwind.Conditions"}}</a>
+                </nav>
             </div>
-        {{!-- </div> --}}
-        
 
-        {{!-- Inventory --}}
-        
-        <div class="tab inventory flexcol" data-group="primary-tabs" data-tab="inventory">
-            Fixed content for tab {{inventory}}<br>
-            {{{content}}}
+            <section class="tab-content">
+                    {{!-- Tab Content --}}
+                    {{!-- Actions --}}
+                    <div class="tab actions" data-group="primary" data-tab="actions">
+                        {{> systems/emberwind-system/templates/sheets/components/hero-actions.hbs}}
+                    </div>
+
+                    {{!-- Inventory --}}
+
+                    <div class="tab inventory" data-group="primary" data-tab="inventory">
+                        Fixed content for tab {{inventory}}<br>
+                        {{{content}}}
+                    </div>
+
+
+                    {{!-- Bio --}}
+
+                    <div class="tab bio" data-group="primary-tabs" data-tab="bio">
+                         Fixed content for tab {{system/emberwind-system/templates/sheets/components/hero-actions.hbs}}<br>
+                    <div style="max-width: 60%;">
+                        <h3>{{ localize "emberwind.Appearance" }}</h3>
+                        <h3>{{ localize "emberwind.Description" }}</h3>
+                        <input id="description" type="text" />
+                        <h3>{{ localize "emberwind.History" }}</h3>
+                        <input id="history" type="text" />
+                    </div>
+                    <div style="max-width: 30%;">
+                        <h3>{{ localize "emberwind.Anchors" }}</h3>
+                        <input type="text" />
+                        <input type="text" />
+                        <input type="text" />
+                        <h3>{{ localize "emberwind.Deadweights"}}</h3>
+                        <input type="text" />
+                        <input type="text" />
+                        <input type="text" />
+                    </div>
+
+                    </div>
+
+                    {{!-- Conditions --}}
+
+                    <div class="tab conditions flexcol" data-group="primary-tabs" data-tab="conditions">
+                        Fixed content for tab {{conditions}}<br>
+                    </div>
+            </section>
         </div>
-        
-
-        {{!-- Bio --}}
-        
-        {{!-- <div class="tab bio flexcol" data-group="primary-tabs" data-tab="bio">
-             Fixed content for tab {{bio}}<br> --}}
-            <div style="max-width: 60%;">
-                <h3>{{ localize "emberwind.Appearance" }}</h3>
-                <h3>{{ localize "emberwind.Description" }}</h3>
-                <input id="description" type="text" />
-                <h3>{{ localize "emberwind.History" }}</h3>
-                <input id="history" type="text" />
-            </div>
-            <div style="max-width: 30%;">
-                <h3>{{ localize "emberwind.Anchors" }}</h3>
-                <input type="text"/>
-                <input type="text"/>
-                <input type="text"/>
-                <h3>{{ localize "emberwind.Deadweights"}}</h3>
-                <input type="text"/>
-                <input type="text"/>
-                <input type="text"/>
-            </div>
-        
-        {{!-- </div> --}}
-        
-        {{!-- Conditions --}}
-        
-        <div class="tab conditions flexcol" data-group="primary-tabs" data-tab="conditions">
-            Fixed content for tab {{conditions}}<br>
-        </div>
-    
-    </section>
+    </div>
 </form>
